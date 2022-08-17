@@ -27,7 +27,7 @@ function DeckScreen() {
   if (deck.name) {
     return (
       <div>
-        <DeckScreenBreadCrumbNav deck={deck.name} />
+        <DeckScreenBreadCrumbNav deck={deck} />
         <Route path={url}>
           <DeckComponent
             deckName={deck.name}

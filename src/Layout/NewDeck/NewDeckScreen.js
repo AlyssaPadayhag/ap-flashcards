@@ -25,8 +25,11 @@ function NewDeckScreen() {
         <div>
             <NewDeckBreadCrumbNav />
             <h1>Create Deck</h1>
-            <NewDeckForm />
-            
+            <NewDeckForm handleNewDeckSubmit={handleNewDeckSubmit}
+            handleNewDeckNameChange={handleNewDeckNameChange}
+            handleNewDeckDescription={handleNewDeckDescription}
+            newDeckName={newDeckName}
+            newDeckDescription={newDeckDescription} />
         </div>
     );
         

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { createCard, readDeck } from "../../utils/api/index";
 
-import AddCardForm from "./AddCardForm";
+import AddEditCardForm from "../AddEditCardForm";
 import AddCardDoneButton from "./AddCardDoneButton";
 import AddCardsScreenBreadCrumbNav from "./AddCardsScreenBreadCrumbNav";
 
@@ -39,7 +39,7 @@ function AddCardsScreen() {
                 <AddCardsScreenBreadCrumbNav deckId={deckId} deck={deck} />
                 <h2>{deck.name}: Add Card</h2>
                 <form onSubmit={handleAddCardSave}>
-                    <AddCardForm
+                    <AddEditCardForm
                         frontCard={frontCard}
                         handleFrontCardChange={handleFrontCardChange}
                         backCard={backCard}

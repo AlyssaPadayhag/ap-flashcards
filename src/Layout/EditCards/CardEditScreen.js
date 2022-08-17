@@ -3,7 +3,7 @@ import { useParams, useHistory } from "react-router-dom";
 import { readDeck, readCard, updateCard } from "../../utils/api/index";
 
 import CardEditBreadCrumbNav from "./CardEditBreadCrumbNav";
-import EditCardForm from "./EditCardForm";
+import AddEditCardForm from "../AddEditCardForm";
 import CardEditCancelButton from "./CardEditCancelButton";
 
 function CardEditScreen() {
@@ -57,7 +57,7 @@ function CardEditScreen() {
       />
       <h2>Edit Card</h2>
       <form onSubmit={handleEditCardSubmit}>
-        <EditCardForm
+        <AddEditCardForm
           frontCard={frontCard}
           handleFrontCardChange={handleFrontCardChange}
           backCard={backCard}

@@ -1,6 +1,6 @@
 import React from "react";
 
-function EditCardForm({ frontCard, handleFrontCardChange, backCard, handleBackCardChange }) {
+function AddEditCardForm({ frontCard, handleFrontCardChange, backCard, handleBackCardChange }) {
     return (
         <form>
             <div className="form-group">
@@ -28,7 +28,7 @@ function EditCardForm({ frontCard, handleFrontCardChange, backCard, handleBackCa
                 />
             </div>
         </form>
-    );
+    ); 
 }
 
-export default EditCardForm;
+export default AddEditCardForm;
