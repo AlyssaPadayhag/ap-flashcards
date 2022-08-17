@@ -1,0 +1,22 @@
+
+https://initialcommit.com/blog/usestate-useeffect-hooks-react
+The useState hook is used for storing variables that are part of your application's state and will change as the user interacts with your website.
+The useEffect hook allows components to react to lifecycle events such as mounting to the DOM, re-rendering, and unmounting.
+    - Async await for the API, we don't know how longit may take to load
+
+https://v5.reactrouter.com/web/api/Hooks/usehistory
+useHistory: This is one of the most popular hooks provided by React Router. It lets you access the history instance used by React Router.
+Using the history instance you can redirect users to another page.
+
+https://dev.to/aasthapandey/link-navlink-or-usehistory-398p
+Link vs useHistory
+Use a link to link to other pages. Use a button when performing a server side action.
+Always prefer to use links for navigation.
+    useHistory hook provided by react-router can be used with a button
+    NavLink should be used with some kind of navigation bar as it will be helpful in
+        showing which tab is active and at the same time will be able to take to some other linked URL.
+    Link too should be used with some kind of navigation bar but it will not be helpful in showing which
+        tab is active without some extra css effort but the sole purpose of linking it to some URL will be served.
+
+Use OBJECT {} for one item with properties => loading certain deck
+Use ARRAY [] for a collection of objects or a list => list of decks, list of cards
